@@ -1,0 +1,205 @@
+# Page snapshot
+
+```yaml
+- generic [ref=e3]:
+  - generic:
+    - complementary [ref=e4]:
+      - navigation "Sidepanel" [ref=e5]:
+        - generic [ref=e6]:
+          - link "client brand banner" [ref=e7] [cursor=pointer]:
+            - /url: https://www.orangehrm.com/
+            - img "client brand banner" [ref=e9]
+          - text: 
+        - generic [ref=e10]:
+          - generic [ref=e11]:
+            - generic [ref=e12]:
+              - textbox "Search" [ref=e15]
+              - button "" [ref=e16] [cursor=pointer]:
+                - generic [ref=e17]: 
+            - separator [ref=e18]
+          - list [ref=e19]:
+            - listitem [ref=e20]:
+              - link "Admin" [ref=e21] [cursor=pointer]:
+                - /url: /web/index.php/admin/viewAdminModule
+                - generic [ref=e24]: Admin
+            - listitem [ref=e25]:
+              - link "PIM" [ref=e26] [cursor=pointer]:
+                - /url: /web/index.php/pim/viewPimModule
+                - generic [ref=e40]: PIM
+            - listitem [ref=e41]:
+              - link "Leave" [ref=e42] [cursor=pointer]:
+                - /url: /web/index.php/leave/viewLeaveModule
+                - generic [ref=e45]: Leave
+            - listitem [ref=e46]:
+              - link "Time" [ref=e47] [cursor=pointer]:
+                - /url: /web/index.php/time/viewTimeModule
+                - generic [ref=e53]: Time
+            - listitem [ref=e54]:
+              - link "Recruitment" [ref=e55] [cursor=pointer]:
+                - /url: /web/index.php/recruitment/viewRecruitmentModule
+                - generic [ref=e61]: Recruitment
+            - listitem [ref=e62]:
+              - link "My Info" [ref=e63] [cursor=pointer]:
+                - /url: /web/index.php/pim/viewMyDetails
+                - generic [ref=e69]: My Info
+            - listitem [ref=e70]:
+              - link "Performance" [ref=e71] [cursor=pointer]:
+                - /url: /web/index.php/performance/viewPerformanceModule
+                - generic [ref=e79]: Performance
+            - listitem [ref=e80]:
+              - link "Dashboard" [ref=e81] [cursor=pointer]:
+                - /url: /web/index.php/dashboard/index
+                - generic [ref=e84]: Dashboard
+            - listitem [ref=e85]:
+              - link "Directory" [ref=e86] [cursor=pointer]:
+                - /url: /web/index.php/directory/viewDirectory
+                - generic [ref=e89]: Directory
+            - listitem [ref=e90]:
+              - link "Maintenance" [ref=e91] [cursor=pointer]:
+                - /url: /web/index.php/maintenance/viewMaintenanceModule
+                - generic [ref=e95]: Maintenance
+            - listitem [ref=e96]:
+              - link "Claim" [ref=e97] [cursor=pointer]:
+                - /url: /web/index.php/claim/viewClaimModule
+                - img [ref=e100]
+                - generic [ref=e104]: Claim
+            - listitem [ref=e105]:
+              - link "Buzz" [ref=e106] [cursor=pointer]:
+                - /url: /web/index.php/buzz/viewBuzz
+                - generic [ref=e109]: Buzz
+    - banner [ref=e110]:
+      - generic [ref=e111]:
+        - generic [ref=e112]:
+          - text: 
+          - heading "PIM" [level=6] [ref=e114]
+        - link "Upgrade" [ref=e116]:
+          - /url: https://orangehrm.com/open-source/upgrade-to-advanced
+          - button "Upgrade" [ref=e117] [cursor=pointer]: Upgrade
+        - list [ref=e123]:
+          - listitem [ref=e124]:
+            - generic [ref=e125] [cursor=pointer]:
+              - img "profile picture" [ref=e126]
+              - paragraph [ref=e127]: ahmed zidan
+              - generic [ref=e128]: 
+      - navigation "Topbar Menu" [ref=e130]:
+        - list [ref=e131]:
+          - listitem [ref=e132] [cursor=pointer]:
+            - generic [ref=e133]:
+              - text: Configuration
+              - generic [ref=e134]: 
+          - listitem [ref=e135] [cursor=pointer]:
+            - link "Employee List" [ref=e136]:
+              - /url: "#"
+          - listitem [ref=e137] [cursor=pointer]:
+            - link "Add Employee" [ref=e138]:
+              - /url: "#"
+          - listitem [ref=e139] [cursor=pointer]:
+            - link "Reports" [ref=e140]:
+              - /url: "#"
+          - button "" [ref=e142] [cursor=pointer]:
+            - generic [ref=e143]: 
+  - generic [ref=e144]:
+    - generic [ref=e146]:
+      - generic [ref=e147]:
+        - generic [ref=e148]:
+          - heading "Employee Information" [level=5] [ref=e150]
+          - button "" [ref=e153] [cursor=pointer]:
+            - generic [ref=e154]: 
+        - separator [ref=e155]
+        - generic [ref=e157]:
+          - generic [ref=e159]:
+            - generic [ref=e161]:
+              - generic [ref=e163]: Employee Name
+              - generic [ref=e165]:
+                - textbox "Type for hints..." [active] [ref=e167]: Fiona
+                - listbox [ref=e168]:
+                  - option "Searching...." [ref=e169] [cursor=pointer]
+            - generic [ref=e171]:
+              - generic [ref=e173]: Employee Id
+              - textbox [ref=e175]
+            - generic [ref=e177]:
+              - generic [ref=e179]: Employment Status
+              - generic [ref=e182] [cursor=pointer]:
+                - generic [ref=e183]: "-- Select --"
+                - generic [ref=e185]: 
+            - generic [ref=e187]:
+              - generic [ref=e189]: Include
+              - generic [ref=e192] [cursor=pointer]:
+                - generic [ref=e193]: Current Employees Only
+                - generic [ref=e195]: 
+            - generic [ref=e197]:
+              - generic [ref=e199]: Supervisor Name
+              - textbox "Type for hints..." [ref=e203]
+            - generic [ref=e205]:
+              - generic [ref=e207]: Job Title
+              - generic [ref=e210] [cursor=pointer]:
+                - generic [ref=e211]: "-- Select --"
+                - generic [ref=e213]: 
+            - generic [ref=e215]:
+              - generic [ref=e217]: Sub Unit
+              - generic [ref=e220] [cursor=pointer]:
+                - generic [ref=e221]: "-- Select --"
+                - generic [ref=e223]: 
+          - separator [ref=e224]
+          - generic [ref=e225]:
+            - button "Reset" [ref=e226] [cursor=pointer]
+            - button "Search" [ref=e227] [cursor=pointer]
+      - generic [ref=e228]:
+        - button " Add" [ref=e230] [cursor=pointer]:
+          - generic [ref=e231]: 
+          - text: Add
+        - generic [ref=e232]:
+          - separator [ref=e233]
+          - generic [ref=e235]: No Records Found
+        - table [ref=e237]:
+          - rowgroup [ref=e238]:
+            - row " Id  First (& Middle) Name  Last Name  Job Title  Employment Status  Sub Unit  Supervisor  Actions" [ref=e239]:
+              - columnheader "" [ref=e240]:
+                - generic [ref=e242] [cursor=pointer]:
+                  - checkbox "" [ref=e243]
+                  - generic [ref=e245]: 
+              - columnheader "Id " [ref=e246]:
+                - text: Id
+                - generic [ref=e247]:
+                  - generic [ref=e248] [cursor=pointer]: 
+                  - text:  
+              - columnheader "First (& Middle) Name " [ref=e249]:
+                - text: First (& Middle) Name
+                - generic [ref=e250]:
+                  - generic [ref=e251] [cursor=pointer]: 
+                  - text:  
+              - columnheader "Last Name " [ref=e252]:
+                - text: Last Name
+                - generic [ref=e253]:
+                  - generic [ref=e254] [cursor=pointer]: 
+                  - text:  
+              - columnheader "Job Title " [ref=e255]:
+                - text: Job Title
+                - generic [ref=e256]:
+                  - generic [ref=e257] [cursor=pointer]: 
+                  - text:  
+              - columnheader "Employment Status " [ref=e258]:
+                - text: Employment Status
+                - generic [ref=e259]:
+                  - generic [ref=e260] [cursor=pointer]: 
+                  - text:  
+              - columnheader "Sub Unit " [ref=e261]:
+                - text: Sub Unit
+                - generic [ref=e262]:
+                  - generic [ref=e263] [cursor=pointer]: 
+                  - text:  
+              - columnheader "Supervisor " [ref=e264]:
+                - text: Supervisor
+                - generic [ref=e265]:
+                  - generic [ref=e266] [cursor=pointer]: 
+                  - text:  
+              - columnheader "Actions" [ref=e267]
+          - rowgroup
+    - generic [ref=e269]:
+      - paragraph [ref=e270]: OrangeHRM OS 5.8
+      - paragraph [ref=e271]:
+        - text: © 2005 - 2026
+        - link "OrangeHRM, Inc" [ref=e272] [cursor=pointer]:
+          - /url: http://www.orangehrm.com
+        - text: . All rights reserved.
+```

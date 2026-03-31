@@ -1,0 +1,25 @@
+{
+  "name": "qa-portfolio-typescript",
+  "version": "1.0.0",
+  "description": "QA Automation Portfolio — Playwright + TypeScript",
+  "scripts": {
+    "test":          "playwright test",
+    "test:e2e":      "playwright test tests/e2e/",
+    "test:api":      "playwright test tests/api/",
+    "test:headed":   "playwright test --headed",
+    "test:debug":    "playwright test --debug",
+    "report":        "playwright show-report",
+    "lint":          "eslint . --ext .ts",
+    "allure:gen":    "allure generate allure-results --clean",
+    "allure:open":   "allure open allure-report"
+  },
+  "devDependencies": {
+    "@playwright/test":           "^1.44.0",
+    "@types/node":                "^20.0.0",
+    "typescript":                 "^5.4.0",
+    "eslint":                     "^8.57.0",
+    "@typescript-eslint/parser":  "^7.0.0",
+    "@typescript-eslint/eslint-plugin": "^7.0.0",
+    "allure-playwright":          "^3.0.0"
+  }
+}
