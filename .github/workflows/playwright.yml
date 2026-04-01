@@ -5,9 +5,14 @@ on:
     branches: [main, master]
   pull_request:
     branches: [main, master]
-  workflow_dispatch:      # permite correrlo manualmente desde GitHub UI
+  workflow_dispatch:
   schedule:
-    - cron: '0 8 * * 1-5' # corre todos los días de semana a las 8am UTC
+    - cron: '0 8 * * 1-5'
+
+permissions:
+  contents: write
+  pages: write
+  id-token: write
 
 jobs:
   test:
@@ -40,7 +45,6 @@ jobs:
         run: npm run test:api
         env:
           CI: true
-        # Corre aunque los E2E fallen (para ver ambos reportes)
         if: always()
 
       - name: Upload Playwright HTML report
@@ -59,10 +63,10 @@ jobs:
           path: allure-results/
           retention-days: 30
 
-      # Publica el reporte en GitHub Pages (muy impresionante para el portfolio)
       - name: Deploy report to GitHub Pages
         uses: peaceiris/actions-gh-pages@v3
         if: github.ref == 'refs/heads/main'
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir:  ./playwright-report
+          publish_dir: ./playwright-report
+          force_orphan: true
