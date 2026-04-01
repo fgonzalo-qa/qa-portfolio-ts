@@ -79,7 +79,7 @@
           - listitem [ref=e124]:
             - generic [ref=e125] [cursor=pointer]:
               - img "profile picture" [ref=e126]
-              - paragraph [ref=e127]: Shahad Alqahtani
+              - paragraph [ref=e127]: ibrahim alsaadi
               - generic [ref=e128]: 
       - navigation "Topbar Menu" [ref=e130]:
         - list [ref=e131]:
@@ -145,12 +145,71 @@
         - button " Add" [ref=e228] [cursor=pointer]:
           - generic [ref=e229]: 
           - text: Add
-        - table [ref=e231]
-    - generic [ref=e236]:
-      - paragraph [ref=e237]: OrangeHRM OS 5.8
-      - paragraph [ref=e238]:
+        - generic [ref=e230]:
+          - separator [ref=e231]
+          - generic [ref=e233]: (193) Records Found
+        - table [ref=e235]:
+          - rowgroup [ref=e236]:
+            - row " Id  First (& Middle) Name  Last Name  Job Title  Employment Status  Sub Unit  Supervisor  Actions" [ref=e237]:
+              - columnheader "" [ref=e238]:
+                - generic [ref=e240] [cursor=pointer]:
+                  - checkbox "" [ref=e241]
+                  - generic [ref=e243]: 
+              - columnheader "Id " [ref=e244]:
+                - text: Id
+                - generic [ref=e245]:
+                  - generic [ref=e246] [cursor=pointer]: 
+                  - text:  
+              - columnheader "First (& Middle) Name " [ref=e247]:
+                - text: First (& Middle) Name
+                - generic [ref=e248]:
+                  - generic [ref=e249] [cursor=pointer]: 
+                  - text:  
+              - columnheader "Last Name " [ref=e250]:
+                - text: Last Name
+                - generic [ref=e251]:
+                  - generic [ref=e252] [cursor=pointer]: 
+                  - text:  
+              - columnheader "Job Title " [ref=e253]:
+                - text: Job Title
+                - generic [ref=e254]:
+                  - generic [ref=e255] [cursor=pointer]: 
+                  - text:  
+              - columnheader "Employment Status " [ref=e256]:
+                - text: Employment Status
+                - generic [ref=e257]:
+                  - generic [ref=e258] [cursor=pointer]: 
+                  - text:  
+              - columnheader "Sub Unit " [ref=e259]:
+                - text: Sub Unit
+                - generic [ref=e260]:
+                  - generic [ref=e261] [cursor=pointer]: 
+                  - text:  
+              - columnheader "Supervisor " [ref=e262]:
+                - text: Supervisor
+                - generic [ref=e263]:
+                  - generic [ref=e264] [cursor=pointer]: 
+                  - text:  
+              - columnheader "Actions" [ref=e265]
+          - rowgroup
+        - navigation "Pagination Navigation" [ref=e267]:
+          - list [ref=e268]:
+            - listitem [ref=e269]:
+              - button "1" [ref=e270] [cursor=pointer]
+            - listitem [ref=e271]:
+              - button "2" [ref=e272] [cursor=pointer]
+            - listitem [ref=e273]:
+              - button "3" [ref=e274] [cursor=pointer]
+            - listitem [ref=e275]:
+              - button "4" [ref=e276] [cursor=pointer]
+            - listitem [ref=e277]:
+              - button "" [ref=e278] [cursor=pointer]:
+                - generic [ref=e279]: 
+    - generic [ref=e280]:
+      - paragraph [ref=e281]: OrangeHRM OS 5.8
+      - paragraph [ref=e282]:
         - text: © 2005 - 2026
-        - link "OrangeHRM, Inc" [ref=e239] [cursor=pointer]:
+        - link "OrangeHRM, Inc" [ref=e283] [cursor=pointer]:
           - /url: http://www.orangehrm.com
         - text: . All rights reserved.
 ```
