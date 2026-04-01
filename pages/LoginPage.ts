@@ -17,8 +17,8 @@ export class LoginPage extends BasePage {
     const passwordInput = this.page.locator('input[name="password"]');
     const loginButton   = this.page.locator('button[type="submit"]');
 
-    // Timeout de 60s para mobile que carga más lento
-    await usernameInput.waitFor({ state: 'attached', timeout: 60_000 });
+    // Esperamos que el input esté en el DOM y visible
+    await expect(usernameInput).toBeVisible({ timeout: 30_000 });
     await usernameInput.fill(user.username);
     await passwordInput.fill(user.password);
     await loginButton.click({ force: true });
