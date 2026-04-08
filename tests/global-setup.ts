@@ -7,10 +7,22 @@ export default async function globalSetup() {
   const browser = await chromium.launch();
   const page    = await browser.newPage();
 
-  await page.goto(
-    'https://opensource-demo.orangehrmlive.com/web/index.php/auth/login',
-    { waitUntil: 'domcontentloaded', timeout: 30_000 }
-  );
+  // Retry logic for navigation
+  let retries = 3;
+  while (retries > 0) {
+    try {
+      await page.goto(
+        'https://opensource-demo.orangehrmlive.com/web/index.php/auth/login',
+        { waitUntil: 'load', timeout: 60_000 }
+      );
+      break; // Success, exit retry loop
+    } catch (error) {
+      retries--;
+      if (retries === 0) throw error;
+      console.log(`Navigation failed, retrying... (${retries} attempts left)`);
+      await page.waitForTimeout(2000); // Wait 2 seconds before retry
+    }
+  }
 
   await page.locator('input[name="username"]').fill('Admin');
   await page.locator('input[name="password"]').fill('admin123');

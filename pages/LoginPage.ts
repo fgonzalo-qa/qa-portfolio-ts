@@ -17,10 +17,15 @@ export class LoginPage extends BasePage {
     const passwordInput = this.page.locator('input[name="password"]');
     const loginButton   = this.page.locator('button[type="submit"]');
 
-    // Esperamos que el input esté en el DOM y visible
     await expect(usernameInput).toBeVisible({ timeout: 30_000 });
+
+    // Scrolleamos al formulario para asegurarnos que es visible en mobile
+    await usernameInput.scrollIntoViewIfNeeded();
     await usernameInput.fill(user.username);
     await passwordInput.fill(user.password);
+
+    // Scrolleamos al botón y clickeamos con force para mobile
+    await loginButton.scrollIntoViewIfNeeded();
     await loginButton.click({ force: true });
   }
 
